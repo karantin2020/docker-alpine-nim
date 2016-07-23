@@ -18,7 +18,7 @@ RUN apk update && apk upgrade \
   ./koch boot -d:release && \
   ln -s "/opt/Nim/bin/nim" "/usr/local/bin/nim" && \
   \
-  export NIMBLE_VERSION=0.7.2 && \
+  export NIMBLE_VERSION=0.7.4 && \
   cd "/opt" && \
   wget "https://github.com/nim-lang/nimble/archive/v$NIMBLE_VERSION.tar.gz" -O - | tar xz && \
   cd "nimble-$NIMBLE_VERSION" && \
